@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+.loading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 43%;
+    left: -20%;
+}
+
+.loading .line-box{
+    padding: 2px;
+    width: 40%;
+    height: 5px;
+    border: 2px solid #484848;
+    border-radius: 20px;
+}
+
+.loading .line-box .line{
+    height: 5px;
+    border-radius: 20px;
+    background-color: #858585;
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+h1{
+    color: #838383;
+    font-size: 80px;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+p{
+    color: #624b4b;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    letter-spacing: 15px;
+}
+
+button{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-color: rgb(60, 60, 60);
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+button a{
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+button a:hover{
+    text-decoration: underline;
+}
+
+button a:active{
+    cursor: wait;
+}
+
